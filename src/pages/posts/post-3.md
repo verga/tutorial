@@ -220,7 +220,9 @@ $$
 the *rate function*, which can be viewed as a well defined intensive quantity (contrary to $\mathcal{L}$, which generically tends to zero in the thermodynamic limit). The rate function represents the probability density to return to the initial states after a time $t$.
 
 It is interesting to note the analogy of the return (echo) amplitude with the partition function in thermodynamics $Z(T) = \mathrm{tr}\, \E^{-H T}$,
-$$G(t) = \braket{0| t} = \braket{0|\E^{-\I t H}|0}$$
+$$
+G(t) = \braket{0| t} = \braket{0|\E^{-\I t H}|0}
+$$
 if one replaces $T \rightarrow \I t$ (formally considering complex temperatures). In the same way that zeros of the partition function correspond to critical points separating different thermodynamic phases, zeros of the amplitude would indicate *dynamical* quantum phase transitions.[^H]
 
 
@@ -233,9 +235,13 @@ An example of the basic entanglement mechanism can be illustrated by the quantum
 <img src="/images/AQ-cbell0.svg" alt="bell state" style="height: 80px;"/>
 
 where the unitary operator that transforms the initial $\ket{00}$ state into the bell state is the product of the hadamard $\mathsf{h} = (X+Y)/\sqrt{2}$, and controlled not gates:
-$$ U = (1\otimes \mathsf{h}) \exp\left[ \I \pi \frac{1-Z}{2} \otimes \frac{1-X}{2} \right].$$
+$$
+U = (1\otimes \mathsf{h}) \exp\left[ \I \pi \frac{1-Z}{2} \otimes \frac{1-X}{2} \right]
+$$
 A similar entangled state can be obtained using the basic circuit using the controlled phase gate $\mathsf{cz}$
-$$\mathsf{cz} \ket{++} = \exp\left[ \I \pi \frac{1-Z}{2} \otimes \frac{1-Z}{2} \right] \ket{+} \ket{+},$$
+$$
+\mathsf{cz} \ket{++} = \exp\left[ \I \pi \frac{1-Z}{2} \otimes \frac{1-Z}{2} \right] \ket{+} \ket{+}
+$$
 that can be translated into the circuit
 
 <img src="/images/AQ-cbell1.svg" alt="cluster state CZ" style="height: 80px;"/>
